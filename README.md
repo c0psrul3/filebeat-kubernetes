@@ -29,6 +29,8 @@ metadata:
   labels:
     app: filebeat
 spec:
+  updateStrategy:
+    type: RollingUpdate
   template:
     metadata:
       labels:
